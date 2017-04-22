@@ -12,9 +12,12 @@ function getRad() {
     if(value === 0) {
       text.innerText = "The area of the circle is " + area.toFixed() + " units =(";
       circle.style.border = "none";
-    } else {
+    } else if (value === 16777215) {
       text.innerText = "The area of the circle is " + area.toFixed() + " units";
       circle.style.border = "1px solid #000";
+    } else {
+      text.innerText = "The area of the circle is " + area.toFixed() + " units";
+      circle.style.border = "none";
     }
   }
 
